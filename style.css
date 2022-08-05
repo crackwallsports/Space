@@ -1,0 +1,56 @@
+html {
+    font-family: system-ui;
+
+}
+
+pre {
+    font-family: inherit;
+    margin: 0px;
+    white-space: pre-wrap;
+}
+
+.site-header {
+    text-align: center;
+}
+
+.site-header img {
+    width: 100px;
+    height: 100px;
+}
+
+.site-footer {
+    font-size: 1rem;
+    text-align: center;
+    border-top: 1px solid gray;
+    padding-top: 1rem;
+}
+
+.Content {
+    margin: auto;
+    font-size: 1rem;
+    min-height: 80vh;
+}
+
+
+.Title {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+.Past {
+    padding: 1rem;
+}
+
+.Topics {
+    padding: 1rem;
+}
+
+.Topic {
+    padding-left: 1rem;
+    font-size: .9em;
+}
+
+.Topics-title {
+    padding-bottom: .5rem;
+}
