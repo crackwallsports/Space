@@ -1,17 +1,36 @@
-html {
+
+/* 全局 盒模型 设置 */
+:root {
+    box-sizing: border-box;
+    
+}
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+body {
     font-family: system-ui;
+    
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 35em){
+    :root {
+        box-sizing: border-box;
+        font-size: 1.5em;
+    }
 
 }
 
-pre {
-    font-family: inherit;
-    margin: 0px;
-    white-space: pre-wrap;
-}
 
 .Content {
-    margin: auto;
-    font-size: 1rem;
+    margin: 0 auto;
+    
 }
 
 .Box {
@@ -22,67 +41,63 @@ pre {
 
 .Title {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 .Book {
-
-    padding: 1rem 0;
+    padding: 1em 0;
 }
 
 img.Book-cover {
-    max-height: 500px;
+    max-height: 600px;
 }
 
 .Book-info {
-    padding: 0 1rem;
+    padding: 1em 0;
+    font-size: .9em;
 }
 
+
+
 .Book-info li+li {
-    padding-top: 1rem;
+    padding-top: 1em;
 }
 
 .Note {
-    flex: 2;
-    min-width: 300px;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1rem;
+    padding: 1em;
+    width: 100%;
 }
 
 .Note-title {
-    border-bottom: .2rem solid #6699CC;
-    margin-bottom: .5rem;
+    border-bottom: .2em solid #6699CC;
+    margin-bottom: .5em;
     font-size: 1.2rem;
     text-align: center;
-    flex: 2;
+    
 }
+
 
 .Note-chapters {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    grid-gap: .8em;
+    justify-items: center;   
 }
+
 
 .Chapter {
-    padding-right: .5rem;
+    padding-right: .5em;
 }
 
-.Chapter+.Chapter {
-    padding-top: 1.5rem;
+.Chapter + .Chapter {
+    padding-top: 1.5em;
 }
 
 .Chapter-title {
-    display: flex;
-    padding-bottom: .8rem;
+    display: inline-block;
+    padding-bottom: .8em;
 }
 
-.Title-num {
-    display: flex;
-    min-width: 50px;
-    align-items: center;
-    justify-content: space-around;
-}
 
 .Title-content {
     border-bottom: 2px solid steelblue;
@@ -90,83 +105,53 @@ img.Book-cover {
 
 
 .Chapter-text {
-    display: flex;
-    padding: 0px 0px 0 1rem;
+    padding: 0px 0px 0 1em;
     font-size: 0.9rem;
 }
 
-.Chapter-text+.Chapter-text {
-    padding-top: 1rem;
+.Chapter-text + .Chapter-text {
+    padding-top: 1em;
 }
 
-.Text-num {
-    display: flex;
-    min-width: 50px;
-    align-items: center;
-    justify-content: space-around;
-    /* border-right: 5px solid orange;*/
-}
 
 .Text-content {
-    /*padding-left: 5px;*/
+    
     text-align: justify;
-    line-height: 1.5em;
-    flex: 2
+    line-height: 1.5;
+    
 }
 
-.Marker {
-    border-left: 3px solid #6699CC;
-
-    padding-right: .3rem;
-
-
-}
-
-.Original .Title {
-    text-align: left;
-    font-size: 1.2rem;
-    margin: 1rem;
-    border-bottom: 3px solid #6699CC;
-}
-
-.Note .Title {
-    text-align: left;
-    font-size: 1.2rem;
-    margin: 1rem;
-    border-bottom: 3px solid #6699CC;
-}
 
 .Thinking {
-    flex: 2;
-    max-width: 600px;
-    min-width: 300px;
-    padding: 1rem;
+    padding: 1em;
 }
 
 .Thinking-title {
-    border-bottom: .2rem solid #6699CC;
-    margin-bottom: .5rem;
+    border-bottom: .2em solid #6699CC;
+    margin-bottom: .5em;
     font-size: 1.2rem;
     text-align: center;
-    flex: 2;
+    
 }
 
 .Thinking-content {
-    line-height: 1.5em;
+    line-height: 1.5;
+    
 }
 
-.o-list-n+.o-list-n {
+.o-list-n + .o-list-n {
     margin-top: 1em;
 }
 
 .o-kv-k {
+    
     display: inline;
     border-bottom: 2px solid #6699CC;
 }
 
 .o-kv-v {
-    padding-left: 1rem;
-    font-size: .9em;
-    line-height: 1.5em;
+    padding-left: 1em;
+    font-size: .95em;
+    line-height: 1.5;
     margin-top: .5em;
 }
