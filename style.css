@@ -1,7 +1,24 @@
-html {
-    font-family: system-ui;
 
+/* 全局 盒模型 设置 */
+:root {
+    box-sizing: border-box;
+    
 }
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: system-ui;
+    
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 
 pre {
     font-family: inherit;
@@ -22,12 +39,12 @@ pre {
     font-size: 1rem;
     text-align: center;
     border-top: 1px solid gray;
-    padding-top: 1rem;
+    padding-top: 1em;
 }
 
 .Content {
     margin: auto;
-    font-size: 1rem;
+    font-size: 1em;
     min-height: 80vh;
 }
 
@@ -39,18 +56,23 @@ pre {
 
 
 .Past {
-    padding: 1rem;
+    padding: 1em;
 }
 
 .Topics {
-    padding: 1rem;
+    padding: 1em;
 }
 
 .Topic {
-    padding-left: 1rem;
+    padding-left: 1em;
+    font-size: .9em;
+}
+
+.Topic + .Topic {
+    padding-top: .8em;
     font-size: .9em;
 }
 
 .Topics-title {
-    padding-bottom: .5rem;
+    padding-bottom: .5em;
 }
