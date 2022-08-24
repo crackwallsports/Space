@@ -8,8 +8,16 @@
     box-sizing: inherit;
 }
 
+* + * {
+    margin-top: 1em;
+}
+
 body {
     font-family: system-ui;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(15, 15, 18, 1);
+    color: rgb(208, 208, 208);
     
 }
 
@@ -22,7 +30,7 @@ ul {
 
 pre {
     font-family: inherit;
-    margin: 0px;
+    margin: 0;
     white-space: pre-wrap;
 }
 
@@ -36,10 +44,9 @@ pre {
 }
 
 .site-footer {
-    font-size: 1rem;
+    font-size: 0.9em;
     text-align: center;
-    border-top: 1px solid gray;
-    padding-top: 1em;
+    padding: 1em 0;
 }
 
 .Content {
@@ -54,25 +61,52 @@ pre {
     font-size: 1.5em;
 }
 
+a {
+    font-size: .9em;
+    color: lightblue;
+}
+
+.Main {
+    padding: 0 1em;
+}
 
 .Past {
     padding: 1em;
+    
 }
 
 .Topics {
     padding: 1em;
+    
+    border: 1px solid rgb(75, 54, 113);
+border-radius: 15px;
+background-color: rgba(11, 11, 11, 1);
 }
 
-.Topic {
+.Topic-title {
+    margin-bottom: .5em;
+    border-bottom: 1px solid lightgray;
+}
+
+.Topic-note {
+    font-size: .9em;
+    padding-bottom: 1em;
     padding-left: 1em;
-    font-size: .9em;
 }
 
-.Topic + .Topic {
+.Topic-think {
+    font-size: .9em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+}
+.Note,.Think {
+    padding-left: 1em;
+    font-size: .9em;    
+}
+.Note + .Note {
     padding-top: .8em;
-    font-size: .9em;
 }
 
-.Topics-title {
-    padding-bottom: .5em;
+.Think + .Think {
+    padding-top: .8em;
 }
