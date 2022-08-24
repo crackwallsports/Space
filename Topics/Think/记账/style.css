@@ -1,45 +1,4 @@
-
-/* 全局 盒模型 设置 */
-:root {
-    box-sizing: border-box;
-    
-}
-*, ::before, ::after {
-    box-sizing: inherit;
-}
-
-body {
-    font-family: system-ui;
-    
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.Content {
-    margin: 0 auto;
-
-}
-
-.Box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.Title {
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-img {
-    max-width: 800px;
-}
-
 .Accounting {
     line-height: 1.5;
-    font-size: 0.8rem;
+    padding: 0 1em;
 }
