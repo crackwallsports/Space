@@ -79,8 +79,8 @@ a {
     padding: 1em;
     
     border: 1px solid rgb(75, 54, 113);
-border-radius: 15px;
-background-color: rgba(11, 11, 11, 1);
+    border-radius: 15px;
+    background-color: rgba(11, 11, 11, 1);
 }
 
 .Topic-title {
