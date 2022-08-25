@@ -68,6 +68,8 @@ a {
 
 .Main {
     padding: 0 1em;
+    margin: auto;
+    max-width: 1000px;
 }
 
 .Past {
