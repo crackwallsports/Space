@@ -1,0 +1,57 @@
+.Content {
+    min-width: 600px;
+}
+* + * {
+    margin-top: .5em;
+}
+a {
+    color: rgb(153, 115, 179);
+
+}
+pre {
+    line-height: 1.5em;
+}
+.Log-Title {
+    text-align: center;
+}
+.Log > .Lis {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+}
+.Gettr-Post {
+    padding: .3em;
+    border: 1px solid rgb(75, 54, 113);
+    border-radius: 6px;
+    background-color: rgba(11, 11, 11, 1);
+    color: rgb(208, 208, 208);
+    width: 30em;
+}
+.Gettr-Post-Info {
+    /*
+    display: flex;
+    align-items: baseline;
+    */
+    border-bottom: 2px dashed rgb(75, 54, 113);
+    padding-bottom: .3em;
+}
+.Gettr-Post-Link {
+    /*flex-grow: 1;*/
+    
+}
+.Gettr-Post-Account {
+    
+    padding-left: .3em;
+    font-size: .9em;
+    
+    
+}
+.Gettr-Post-Content {
+    font-size: .9em;
+}
+.Gettr-Post-Date {
+    font-size: .8em;
+    padding-left: .3em;
+    
+}
