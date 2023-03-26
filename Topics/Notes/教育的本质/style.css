@@ -2,7 +2,7 @@
 /* 全局 盒模型 设置 */
 :root {
     box-sizing: border-box;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 *, ::before, ::after {
     box-sizing: inherit;
@@ -12,6 +12,7 @@ body {
     font-family: system-ui;
     margin: 0;
     padding: 0;
+    min-width: 600px;
 }
 
 ul {
@@ -20,12 +21,14 @@ ul {
     margin: 0;
 }
 
-@media (min-width: 50em){
+/*
+@media (min-width: 1000px){
     :root {
         font-size: 1em;        
     }
 
 }
+*/
 
 
 .Content {
@@ -37,10 +40,11 @@ ul {
     text-align: center;
     font-size: 1.5rem;
 }
-.Box {
+.main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 
 
@@ -51,7 +55,7 @@ ul {
     flex-wrap: wrap;
     justify-content: center;
 }
-img.Book-cover {
+img.Book-Cover {
     max-height: 380px;
     border-radius: 10px;
 }
@@ -74,46 +78,23 @@ img.Book-cover {
 .Thinking-title {
     margin-bottom: .5em;
     font-size: 1.2rem;
-    
+    text-align: center;
 }
 .Thinking-content {
     line-height: 1.5;
+    display: flex;
+    justify-content: center;
     
 }
-
-.o-list{
-  
-}
-.o-kv-v .o-list-n::before{
-    content: "3";
-    margin-right: 1em;
-    color: purple;
-    vertical-align: baseline;
-}
-.o-list-n{
-    padding: 1em;
+.KVs {
+    padding: .5em;
     border: 1px solid rgb(75, 54, 113);
     border-radius: 6px;
     background-color: rgba(11, 11, 11, 1);
-    color: color: rgb(208, 208, 208);
+    color: rgb(208, 208, 208);
 }
-.o-list-n + .o-list-n {
-    margin-top: 1em;
-}
-
-.o-kv{}
-.o-kv-k{
-}
-.o-kv-v{
-    margin-top: 1em;
-    font-size: .9em;
-}
-.o-kv-v .o-list-n {
-    border: 0;
-    padding: 0 .5em;
-}
-.o-kv .o-kv {
-    font-size: .95em;
+.KVs-v {
+    border-left: 0px;
 }
 
 
@@ -121,54 +102,53 @@ img.Book-cover {
     padding: 1em;
     width: 100%;
 }
-.Note-title {
+.Note-Title {
     margin-bottom: .5em;
     font-size: 1.2rem;
+    text-align: center;
 }
 .Note-chapters {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-    grid-gap: .8em;
-    justify-items: center;   
+     
 }
 .Chapter {
+    
     padding: 1em;
     border: 1px solid rgb(75, 54, 113);
     border-radius: 6px;
     background-color: rgba(11, 11, 11, 1);
-    color: color: rgb(208, 208, 208);
+    color: rgb(208, 208, 208);
+    
     
 }
 
 .Chapter + .Chapter {
-    padding-top: 1.5em;
+    margin-top: 1.5em;
 }
-.Chapter-title {
+.Chapter-Title {
     margin-bottom: 1em;
+    text-align: center;
 }
-.Title-content {
-}
-
-.Chapter-text {
-    padding: 0 1em;
-    font-size: 0.9rem;
+.Chapter-Sections {
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
+    justify-content: center;
+    font-size: .9em;
 }
-.Chapter-text + .Chapter-text {
+.Section + .Section {
     padding-top: 1em;
 }
-.Chapter-text::before{
-    content: "3";
+.Section::before{
+    content: "";
     margin-right: 1em;
     color: purple;
     vertical-align: baseline;
     
 }
-.Text-content {
-    
-    text-align: justify;
-    line-height: 1.5;
+.Section {
+    min-width: 600px;
+    max-width: 800px;
+    padding: .5em 1em;
 }
 
 
