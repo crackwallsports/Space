@@ -56,10 +56,18 @@ pre {
 
 .Past {
     padding: 1em;
+    text-align: center;
 }
 
 .Topics {
     padding: 1em;
+    border: 1px solid rgb(75, 54, 113);
+    border-radius: 6px;
+    margin: auto;
+    max-width: 30em;
+}
+.Topics a {
+    font-size: .9em;
 }
 
 .Topic {
@@ -72,6 +80,7 @@ pre {
     font-size: .9em;
 }
 
-.Topics-title {
+.Topic-title {
     padding-bottom: .5em;
+    border-bottom: 2px solid rgb(75, 54, 113);
 }
