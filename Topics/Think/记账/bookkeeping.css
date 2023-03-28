@@ -1,0 +1,63 @@
+
+
+.align-right {
+    text-align: right;
+    padding-right: .8em;
+}
+.Accounting > * + * {
+    margin-top: 2em;
+}
+table {
+    font-size: .8em;
+    
+    
+    border-collapse: collapse;
+    text-align: left;
+    border-bottom: 1px solid;
+}
+caption {
+    padding-bottom: .5em;
+    font-size: 1.5em;
+    text-align: center;
+
+}
+thead {}
+tbody {}
+tr {}
+th {
+    font-weight: normal;
+    
+    border-bottom: 1px solid;
+    padding-right: 2em;
+}
+td {
+    border-bottom: 1px dotted;
+    padding: .5em 0;
+    padding-right: 2em;
+}
+
+.Img {
+
+    height: 50em;
+}
+.Code {
+    border: 1px solid rgb(75, 54, 113);
+    padding: 1em;
+    border-radius: 6px;
+}
+
+.Bookkeeping {
+    margin: 2em;
+    border: 1px solid rgb(75, 54, 113);
+    border-radius: 6px;
+}
+.Bookkeeping > .Lis > .Lis-i {
+    padding: .5em;
+   border-bottom: 1px solid rgb(75, 54, 113);
+    /*border-radius: 6px;*/
+    background-color: rgba(11, 11, 11, 1);
+    color: rgb(208, 208, 208);
+}
+.KVs {
+    padding: 1em 0;
+}

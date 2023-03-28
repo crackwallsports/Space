@@ -1,154 +1,1364 @@
 <!DOCTYPE html>
 
-  <html>
-    <head>
-      <meta charset='utf-8'>
-      <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
-      <meta name='description' content='?'>
-      <meta name='author' content='Xt3'>
-      <link rel='stylesheet' href='/Space/style.css'>
-      <link rel='stylesheet' href='style-o.css'>
-      <link rel='stylesheet' href='style.css'>
-    </head>
-    <body>
-  <header class='site-header'>
-    <a class='logo' href='/Space/index.html'>
-      <img src='/Space/Resource/carrot-y.png' alt='Xt3Rabbit Logo'>
-    </a>
-  </header>
-      <div class='Content'>
-        <div class='Title'>记账...思考
-        </div>
-        <br>
-        <div class='Accounting'>
-  <div class='o-list'>
-  <div class='o-list-i'>
-  <div class='o-kv'>
-    <div class='o-kv-k'>0. 我只使用 Numbers 大致记录交易, 然后导出csv, 再用自己的程序去处理. 简单的个人记账使用 Numbers 或 Excel 就可以满足, 可以把账户建的更加细化, 来方便汇总和统计.
-    </div>
-    <div class='o-kv-v'>
-  <div class='o-list'>
-  <div class='o-list-i'>
-  <a class='o-link' href='Resource/记账示例.numbers'>文件: 记账示例.numbers
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='description' content='?'>
+    <meta name='author' content='Xt3'>
+<link rel='stylesheet' href='/Volumes/Macintosh HD/Users/xt3/Program/my/Space/Style.css'>
+<link rel='stylesheet' href='/Volumes/Macintosh HD/Users/xt3/Program/my/Space/o-Style.css'>
+<link rel='stylesheet' href='bookkeeping.css'>
+  </head>
+  <body>
+<header class='site-header'>
+  <a class='logo' href='/Volumes/Macintosh HD/Users/xt3/Program/my/Space/index.html'>
+    <img src='/Volumes/Macintosh HD/Users/xt3/Program/my/Space/Resource/carrot-y.png' alt='Xt3Rabbit Logo'>
   </a>
-  </div>
-  <div class='o-list-i'>
-  <a class='o-link' href='Resource/记账示例.xlsx'>文件(Excel版): 记账示例.xlsx
-  </a>
-  </div>
-  </div>
-    </div>
-  </div>
-  </div>
-  <div class='o-list-i'>
-  <div class='o-kv'>
-    <div class='o-kv-k'>1. 根据需求 创建账户
-    </div>
-    <div class='o-kv-v'>
-  <div class='o-list'>
-  <div class='o-list-i'>
-  <img class='o-img' src='Resource/创建账户.jpg' alt='创建账户'>
-  </div>
-  </div>
-    </div>
-  </div>
-  </div>
-  <div class='o-list-i'>
-  <div class='o-kv'>
-    <div class='o-kv-k'>2. 拷贝账户初始余额到1月
-    </div>
-    <div class='o-kv-v'>
-  <div class='o-list'>
-  <div class='o-list-i'>
-  <img class='o-img' src='Resource/记录交易-1月.jpg' alt='记录交易-1月'>
-  </div>
-  <div class='o-list-i'>
-  <div class='o-kv'>
-    <div class='o-kv-k'>账户状态中 Flowing 所使用公式: 
-    </div>
-    <div class='o-kv-v'>
-  <div class='o-list'>
-  <div class='o-list-i'>
-  <div class='o-code'>
-    <span class='o-code-lang'>Excel
-    </span>
-    <pre class='o-code-src'>SUMIF(交易::$F$2:$F$11,$C2,交易::$E$2:$E$11)−SUMIF(交易::$D$2:$D$11,$C2,交易::$E$2:$E$11)</pre>
-  </div>
-  </div>
-  <div class='o-list-i'>使用 函数SUMIF() 就可实现自动账户余额处理.
-  </div>
-  </div>
-    </div>
-  </div>
-  </div>
-  </div>
-    </div>
-  </div>
-  </div>
-  <div class='o-list-i'>
-  <div class='o-kv'>
-    <div class='o-kv-k'>3. 同理
-    </div>
-    <div class='o-kv-v'>
-  <div class='o-list'>
-  <div class='o-list-i'>
-  <img class='o-img' src='Resource/记录交易-2月.jpg' alt='记录交易-2月'>
-  </div>
-  </div>
-    </div>
-  </div>
-  </div>
-  <div class='o-list-i'>
-  <div class='o-kv'>
-    <div class='o-kv-k'>4. 同理.
-    </div>
-    <div class='o-kv-v'>
-  <div class='o-list'>
-  <div class='o-list-i'>
-  <img class='o-img' src='Resource/记录交易-3月.jpg' alt='记录交易-3月'>
-  </div>
-  </div>
-    </div>
-  </div>
-  </div>
-  <div class='o-list-i'>
-  <div class='o-kv'>
-    <div class='o-kv-k'>5. 看过会计相关的书, 但对个人使用太复杂, 复式记账的表现形式太啰嗦, 直接使用流式要简单的多, 不用去记忆借了贷了的, 左右位置已经表示了.现在都计算机时代了, 除了手工输入核对每笔交易, 其他的完全用程序自动去处理就好, 只需要根据各自需要建立好规则.
-    </div>
-    <div class='o-kv-v'>
-  <div class='o-list'>
-  </div>
-    </div>
-  </div>
-  </div>
-  <div class='o-list-i'>
-  <div class='o-kv'>
-    <div class='o-kv-k'>6. 要是不嫌累的话, 可以手动分发交易到出入的账户.
-    </div>
-    <div class='o-kv-v'>
-  <div class='o-list'>
-  <div class='o-list-i'>
-  <a class='o-link' href='Resource/记账示例-手动交易分发.numbers'>文件: 记账示例-手动交易分发.numbers
-  </a>
-  </div>
-  <div class='o-list-i'>
-  <a class='o-link' href='Resource/记账示例-手动交易分发.xlsx'>文件(Excel版): 记账示例-手动交易分发.xlsx
-  </a>
-  </div>
-  <div class='o-list-i'>
-  <img class='o-img' src='Resource/手动分发交易-支出.jpg' alt='手动分发交易-支出'>
-  </div>
-  <div class='o-list-i'>
-  <img class='o-img' src='Resource/手动分发交易-现金钱包.jpg' alt='手动分发交易-现金钱包'>
-  </div>
-  </div>
-    </div>
-  </div>
-  </div>
-  </div>
-        </div>
+</header>
+    <div class='Content'>
+      <div class='Title'>Thinking Bookkeeping 记账...思考
       </div>
+      <br>
+      <div class='Main'><div class='Bookkeeping'>
+<div class='Lis'>
+<div class='Lis-i'>
+<div class='KVs'>
+  <div class='KVs-k'>我只使用 Numbers 大致记录交易, 然后导出csv, 再用自己的程序去处理. 简单的个人记账使用 Numbers 或 Excel 就可以满足, 可以把账户建的更加细化, 来方便汇总和统计.
+  </div>
+  <div class='KVs-v'>
+<div class='Lis'>
+<div class='Lis-i'>
+<div class='Link'>
+  <a href='Resource/记账示例.numbers'>文件: 记账示例.numbers
+  </a>
+</div>
+</div>
+<div class='Lis-i'>
+<div class='Link'>
+  <a href='Resource/记账示例.xlsx'>文件(Excel版): 记账示例.xlsx
+  </a>
+</div>
+</div>
+</div>
+  </div>
+</div>
+</div>
+<div class='Lis-i'>
+<div class='KVs'>
+  <div class='KVs-k'>根据需求, 创建账户
+  </div>
+  <div class='KVs-v'>
+<table class='Accounts'>
+  <caption>Account
+  </caption>
+  <thead class='Accounts-Title'>
+    <tr>
+      <th>ID
+      </th>
+      <th>LABEL
+      </th>
+      <th>NAME
+      </th>
+      <th class='align-right'>BALANCE
+      </th>
+      <th>DES
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+  <td>1487598512
+  </td>
+  <td>
+  </td>
+  <td>收入
+  </td>
+  <td class='align-right'>0.00
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>3700023247
+  </td>
+  <td>
+  </td>
+  <td>支出
+  </td>
+  <td class='align-right'>0.00
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>2066346468
+  </td>
+  <td>
+  </td>
+  <td>损益
+  </td>
+  <td class='align-right'>0.00
+  </td>
+  <td>未知来源或莫名消失的钱
+  </td>
+</tr>
+<tr>
+  <td>3048906322
+  </td>
+  <td>资产, 钱包, 现金
+  </td>
+  <td>现金钱包
+  </td>
+  <td class='align-right'>0.00
+  </td>
+  <td>随身携带的现金 (小于100不计)
+  </td>
+</tr>
+<tr>
+  <td>3545030725
+  </td>
+  <td>资产, 现金
+  </td>
+  <td>储备金
+  </td>
+  <td class='align-right'>0.00
+  </td>
+  <td>放在家里的现金 (小于100不计)
+  </td>
+</tr>
+<tr>
+  <td>1699189770
+  </td>
+  <td>资产, A, 银行, 存款
+  </td>
+  <td>银行-1234
+  </td>
+  <td class='align-right'>0.00
+  </td>
+  <td>银行存款账户
+  </td>
+</tr>
+<tr>
+  <td>3356184867
+  </td>
+  <td>资产, B, 银行, 存款
+  </td>
+  <td>银行-7890
+  </td>
+  <td class='align-right'>0.00
+  </td>
+  <td>银行存款账户
+  </td>
+</tr>
+<tr>
+  <td>799409569
+  </td>
+  <td>负债, 银行, 信用
+  </td>
+  <td>信用卡-6666
+  </td>
+  <td class='align-right'>0.00
+  </td>
+  <td>信用卡 (额度:5000)
+  </td>
+</tr>
+<tr>
+  <td>2587222139
+  </td>
+  <td>负债, 某金融机构, 信用
+  </td>
+  <td>信用账户-555
+  </td>
+  <td class='align-right'>0.00
+  </td>
+  <td>信用服务 (额度:3000)
+  </td>
+</tr>
+<tr>
+  <td>3730407238
+  </td>
+  <td>资产, 电子钱包, 某某金融机构, 现金
+  </td>
+  <td>电子账户-X
+  </td>
+  <td class='align-right'>0.00
+  </td>
+  <td>电子钱包 (充值,提现)
+  </td>
+</tr>
+<tr>
+  <td>36479809
+  </td>
+  <td>
+  </td>
+  <td>应收
+  </td>
+  <td class='align-right'>0.00
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>1217159695
+  </td>
+  <td>负债
+  </td>
+  <td>应付
+  </td>
+  <td class='align-right'>0.00
+  </td>
+  <td>
+  </td>
+</tr>
+  </tbody>
+</table>
+  </div>
+</div>
+</div>
+<div class='Lis-i'>
+<div class='KVs'>
+  <div class='KVs-k'>执行1月交易, 更新1月账户数据
+  </div>
+  <div class='KVs-v'>
+<div class='Lis'>
+<div class='Lis-i'>
+<div class='Lis'>
+</div>
+</div>
+<div class='Lis-i'>
+<div class='Accounting'>
+<table class='Transactions'>
+  <caption>Transaction
+  </caption>
+  <thead class='Transactions-Title'>
+    <tr>
+      <th>ID
+      </th>
+      <th>LABEL
+      </th>
+      <th>DATE
+      </th>
+      <th>OUT
+      </th>
+      <th class='align-right'>FLOW
+      </th>
+      <th>IN
+      </th>
+      <th>NOTE
+      </th>
+      <th>COMMENT
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+  <td>928502140
+  </td>
+  <td>Cleared, 工资
+  </td>
+  <td>2022-01-01
+  </td>
+  <td>收入
+  </td>
+  <td class='align-right'>3,000.00
+  </td>
+  <td>现金钱包
+  </td>
+  <td>工资
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>3207367370
+  </td>
+  <td>Cleared, 流转
+  </td>
+  <td>2022-01-02
+  </td>
+  <td>现金钱包
+  </td>
+  <td class='align-right'>1,000.00
+  </td>
+  <td>银行-1234
+  </td>
+  <td>存现
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>2661103633
+  </td>
+  <td>Cleared, 长期存款, 流转
+  </td>
+  <td>2022-01-02
+  </td>
+  <td>现金钱包
+  </td>
+  <td class='align-right'>1,000.00
+  </td>
+  <td>银行-7890
+  </td>
+  <td>存现 长期存款
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>615650690
+  </td>
+  <td>Cleared, 充值, 流转
+  </td>
+  <td>2022-01-03
+  </td>
+  <td>现金钱包
+  </td>
+  <td class='align-right'>300.00
+  </td>
+  <td>电子账户-X
+  </td>
+  <td>充值
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>3670871526
+  </td>
+  <td>Cleared, 家, 电费
+  </td>
+  <td>2022-01-08
+  </td>
+  <td>信用卡-6666
+  </td>
+  <td class='align-right'>68.00
+  </td>
+  <td>支出
+  </td>
+  <td>电费
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>2819541445
+  </td>
+  <td>Cleared, 加油
+  </td>
+  <td>2022-01-19
+  </td>
+  <td>信用账户-555
+  </td>
+  <td class='align-right'>180.00
+  </td>
+  <td>支出
+  </td>
+  <td>加油 车号: 数量: 单价: 里程:
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>814400143
+  </td>
+  <td>Cleared, 停车
+  </td>
+  <td>2022-01-31
+  </td>
+  <td>信用账户-555
+  </td>
+  <td class='align-right'>165.00
+  </td>
+  <td>支出
+  </td>
+  <td>停车费
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>3247335486
+  </td>
+  <td>Cleared, 房租
+  </td>
+  <td>2022-01-31
+  </td>
+  <td>银行-1234
+  </td>
+  <td class='align-right'>1,000.00
+  </td>
+  <td>支出
+  </td>
+  <td>房租
+  </td>
+  <td>
+  </td>
+</tr>
+  </tbody>
+</table>
+<table class='Accounts'>
+  <caption>Account
+  </caption>
+  <thead class='Accounts-Title'>
+    <tr>
+      <th>ID
+      </th>
+      <th>LABEL
+      </th>
+      <th>NAME
+      </th>
+      <th class='align-right'>BALANCE
+      </th>
+      <th>DES
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+  <td>1487598512
+  </td>
+  <td>
+  </td>
+  <td>收入
+  </td>
+  <td class='align-right'>-3,000.00
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>3700023247
+  </td>
+  <td>
+  </td>
+  <td>支出
+  </td>
+  <td class='align-right'>1,413.00
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>2066346468
+  </td>
+  <td>
+  </td>
+  <td>损益
+  </td>
+  <td class='align-right'>0.00
+  </td>
+  <td>未知来源或莫名消失的钱
+  </td>
+</tr>
+<tr>
+  <td>3048906322
+  </td>
+  <td>资产, 钱包, 现金
+  </td>
+  <td>现金钱包
+  </td>
+  <td class='align-right'>700.00
+  </td>
+  <td>随身携带的现金 (小于100不计)
+  </td>
+</tr>
+<tr>
+  <td>3545030725
+  </td>
+  <td>资产, 现金
+  </td>
+  <td>储备金
+  </td>
+  <td class='align-right'>0.00
+  </td>
+  <td>放在家里的现金 (小于100不计)
+  </td>
+</tr>
+<tr>
+  <td>1699189770
+  </td>
+  <td>资产, A, 银行, 存款
+  </td>
+  <td>银行-1234
+  </td>
+  <td class='align-right'>0.00
+  </td>
+  <td>银行存款账户
+  </td>
+</tr>
+<tr>
+  <td>3356184867
+  </td>
+  <td>资产, B, 银行, 存款
+  </td>
+  <td>银行-7890
+  </td>
+  <td class='align-right'>1,000.00
+  </td>
+  <td>银行存款账户
+  </td>
+</tr>
+<tr>
+  <td>799409569
+  </td>
+  <td>负债, 银行, 信用
+  </td>
+  <td>信用卡-6666
+  </td>
+  <td class='align-right'>-68.00
+  </td>
+  <td>信用卡 (额度:5000)
+  </td>
+</tr>
+<tr>
+  <td>2587222139
+  </td>
+  <td>负债, 某金融机构, 信用
+  </td>
+  <td>信用账户-555
+  </td>
+  <td class='align-right'>-345.00
+  </td>
+  <td>信用服务 (额度:3000)
+  </td>
+</tr>
+<tr>
+  <td>3730407238
+  </td>
+  <td>资产, 电子钱包, 某某金融机构, 现金
+  </td>
+  <td>电子账户-X
+  </td>
+  <td class='align-right'>300.00
+  </td>
+  <td>电子钱包 (充值,提现)
+  </td>
+</tr>
+<tr>
+  <td>36479809
+  </td>
+  <td>
+  </td>
+  <td>应收
+  </td>
+  <td class='align-right'>0.00
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>1217159695
+  </td>
+  <td>负债
+  </td>
+  <td>应付
+  </td>
+  <td class='align-right'>0.00
+  </td>
+  <td>
+  </td>
+</tr>
+  </tbody>
+</table>
+</div>
+</div>
+<div class='Lis-i'>
+<div class='KVs'>
+  <div class='KVs-k'>账户状态中 Flowing 所使用公式: 
+  </div>
+  <div class='KVs-v'>
+<div class='Lis'>
+<div class='Lis-i'>
+<div class='Code'>
+  <span class='Code-lang'>Excel
+  </span>
+  <pre>SUMIF(交易::$F$2:$F$11,$C2,交易::$E$2:$E$11)−SUMIF(交易::$D$2:$D$11,$C2,交易::$E$2:$E$11)</pre>
+</div>
+</div>
+<div class='Lis-i'>使用 函数SUMIF() 就可实现自动账户余额处理.
+</div>
+</div>
+  </div>
+</div>
+</div>
+</div>
+  </div>
+</div>
+</div>
+<div class='Lis-i'>
+<div class='KVs'>
+  <div class='KVs-k'>依序处理交易: 2-3月
+  </div>
+  <div class='KVs-v'>
+<div class='Lis'>
+<div class='Lis-i'>
+<div class='Lis'>
+</div>
+</div>
+<div class='Lis-i'>
+<div class='Accounting'>
+<table class='Transactions'>
+  <caption>Transaction
+  </caption>
+  <thead class='Transactions-Title'>
+    <tr>
+      <th>ID
+      </th>
+      <th>LABEL
+      </th>
+      <th>DATE
+      </th>
+      <th>OUT
+      </th>
+      <th class='align-right'>FLOW
+      </th>
+      <th>IN
+      </th>
+      <th>NOTE
+      </th>
+      <th>COMMENT
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+  <td>3884379597
+  </td>
+  <td>Cleared, 工资
+  </td>
+  <td>2022-02-01
+  </td>
+  <td>收入
+  </td>
+  <td class='align-right'>3,000.00
+  </td>
+  <td>现金钱包
+  </td>
+  <td>工资
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>1304603619
+  </td>
+  <td>Cleared, 流转
+  </td>
+  <td>2022-02-01
+  </td>
+  <td>现金钱包
+  </td>
+  <td class='align-right'>1,000.00
+  </td>
+  <td>银行-1234
+  </td>
+  <td>存现
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>578842476
+  </td>
+  <td>Cleared, 长期存款, 流转
+  </td>
+  <td>2022-02-01
+  </td>
+  <td>现金钱包
+  </td>
+  <td class='align-right'>2,000.00
+  </td>
+  <td>银行-7890
+  </td>
+  <td>存现 长期存款
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>3705464450
+  </td>
+  <td>Cleared, 充值, 流转
+  </td>
+  <td>2022-02-01
+  </td>
+  <td>现金钱包
+  </td>
+  <td class='align-right'>200.00
+  </td>
+  <td>电子账户-X
+  </td>
+  <td>充值
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>1425493314
+  </td>
+  <td>Cleared, 电子书
+  </td>
+  <td>2022-02-05
+  </td>
+  <td>电子账户-X
+  </td>
+  <td class='align-right'>89.00
+  </td>
+  <td>支出
+  </td>
+  <td>电子书店 书名:
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>3373843797
+  </td>
+  <td>Cleared, 家, 电费
+  </td>
+  <td>2022-02-08
+  </td>
+  <td>信用卡-6666
+  </td>
+  <td class='align-right'>76.00
+  </td>
+  <td>支出
+  </td>
+  <td>电费
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>897945464
+  </td>
+  <td>Cleared, 餐饮
+  </td>
+  <td>2022-02-15
+  </td>
+  <td>信用卡-6666
+  </td>
+  <td class='align-right'>172.00
+  </td>
+  <td>支出
+  </td>
+  <td>餐饮
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>1077220695
+  </td>
+  <td>Cleared, 游戏
+  </td>
+  <td>2022-02-19
+  </td>
+  <td>电子账户-X
+  </td>
+  <td class='align-right'>350.00
+  </td>
+  <td>支出
+  </td>
+  <td>游戏
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>3279716941
+  </td>
+  <td>Cleared, 还款
+  </td>
+  <td>2022-02-20
+  </td>
+  <td>银行-1234
+  </td>
+  <td class='align-right'>345.00
+  </td>
+  <td>信用账户-555
+  </td>
+  <td>还款
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>491090309
+  </td>
+  <td>Cleared, 还款
+  </td>
+  <td>2022-02-25
+  </td>
+  <td>银行-1234
+  </td>
+  <td class='align-right'>68.00
+  </td>
+  <td>信用卡-6666
+  </td>
+  <td>还款
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>4022628218
+  </td>
+  <td>Cleared, 房租
+  </td>
+  <td>2022-02-28
+  </td>
+  <td>银行-1234
+  </td>
+  <td class='align-right'>1,000.00
+  </td>
+  <td>支出
+  </td>
+  <td>房租
+  </td>
+  <td>
+  </td>
+</tr>
+  </tbody>
+</table>
+<table class='Accounts'>
+  <caption>Account
+  </caption>
+  <thead class='Accounts-Title'>
+    <tr>
+      <th>ID
+      </th>
+      <th>LABEL
+      </th>
+      <th>NAME
+      </th>
+      <th class='align-right'>BALANCE
+      </th>
+      <th>DES
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+  <td>1487598512
+  </td>
+  <td>
+  </td>
+  <td>收入
+  </td>
+  <td class='align-right'>-6,000.00
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>3700023247
+  </td>
+  <td>
+  </td>
+  <td>支出
+  </td>
+  <td class='align-right'>3,100.00
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>2066346468
+  </td>
+  <td>
+  </td>
+  <td>损益
+  </td>
+  <td class='align-right'>0.00
+  </td>
+  <td>未知来源或莫名消失的钱
+  </td>
+</tr>
+<tr>
+  <td>3048906322
+  </td>
+  <td>资产, 钱包, 现金
+  </td>
+  <td>现金钱包
+  </td>
+  <td class='align-right'>500.00
+  </td>
+  <td>随身携带的现金 (小于100不计)
+  </td>
+</tr>
+<tr>
+  <td>3545030725
+  </td>
+  <td>资产, 现金
+  </td>
+  <td>储备金
+  </td>
+  <td class='align-right'>0.00
+  </td>
+  <td>放在家里的现金 (小于100不计)
+  </td>
+</tr>
+<tr>
+  <td>1699189770
+  </td>
+  <td>资产, A, 银行, 存款
+  </td>
+  <td>银行-1234
+  </td>
+  <td class='align-right'>-413.00
+  </td>
+  <td>银行存款账户
+  </td>
+</tr>
+<tr>
+  <td>3356184867
+  </td>
+  <td>资产, B, 银行, 存款
+  </td>
+  <td>银行-7890
+  </td>
+  <td class='align-right'>3,000.00
+  </td>
+  <td>银行存款账户
+  </td>
+</tr>
+<tr>
+  <td>799409569
+  </td>
+  <td>负债, 银行, 信用
+  </td>
+  <td>信用卡-6666
+  </td>
+  <td class='align-right'>-248.00
+  </td>
+  <td>信用卡 (额度:5000)
+  </td>
+</tr>
+<tr>
+  <td>2587222139
+  </td>
+  <td>负债, 某金融机构, 信用
+  </td>
+  <td>信用账户-555
+  </td>
+  <td class='align-right'>0.00
+  </td>
+  <td>信用服务 (额度:3000)
+  </td>
+</tr>
+<tr>
+  <td>3730407238
+  </td>
+  <td>资产, 电子钱包, 某某金融机构, 现金
+  </td>
+  <td>电子账户-X
+  </td>
+  <td class='align-right'>61.00
+  </td>
+  <td>电子钱包 (充值,提现)
+  </td>
+</tr>
+<tr>
+  <td>36479809
+  </td>
+  <td>
+  </td>
+  <td>应收
+  </td>
+  <td class='align-right'>0.00
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>1217159695
+  </td>
+  <td>负债
+  </td>
+  <td>应付
+  </td>
+  <td class='align-right'>0.00
+  </td>
+  <td>
+  </td>
+</tr>
+  </tbody>
+</table>
+</div>
+</div>
+<div class='Lis-i'>
+<div class='Lis'>
+</div>
+</div>
+<div class='Lis-i'>
+<div class='Accounting'>
+<table class='Transactions'>
+  <caption>Transaction
+  </caption>
+  <thead class='Transactions-Title'>
+    <tr>
+      <th>ID
+      </th>
+      <th>LABEL
+      </th>
+      <th>DATE
+      </th>
+      <th>OUT
+      </th>
+      <th class='align-right'>FLOW
+      </th>
+      <th>IN
+      </th>
+      <th>NOTE
+      </th>
+      <th>COMMENT
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+  <td>1546128085
+  </td>
+  <td>Cleared, 工资
+  </td>
+  <td>2022-03-01
+  </td>
+  <td>收入
+  </td>
+  <td class='align-right'>3,000.00
+  </td>
+  <td>现金钱包
+  </td>
+  <td>工资
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>2720759397
+  </td>
+  <td>Cleared, 流转
+  </td>
+  <td>2022-03-03
+  </td>
+  <td>现金钱包
+  </td>
+  <td class='align-right'>1,000.00
+  </td>
+  <td>银行-1234
+  </td>
+  <td>存现
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>3013335137
+  </td>
+  <td>Cleared, 长期存款, 流转
+  </td>
+  <td>2022-03-03
+  </td>
+  <td>现金钱包
+  </td>
+  <td class='align-right'>2,000.00
+  </td>
+  <td>银行-7890
+  </td>
+  <td>存现 长期存款
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>2598148589
+  </td>
+  <td>Cleared, 家, 电费
+  </td>
+  <td>2022-03-08
+  </td>
+  <td>信用卡-6666
+  </td>
+  <td class='align-right'>63.00
+  </td>
+  <td>支出
+  </td>
+  <td>电费
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>1582364774
+  </td>
+  <td>Cleared, 食品
+  </td>
+  <td>2022-03-15
+  </td>
+  <td>信用卡-6666
+  </td>
+  <td class='align-right'>382.00
+  </td>
+  <td>支出
+  </td>
+  <td>食品
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>855419429
+  </td>
+  <td>Cleared, 还款
+  </td>
+  <td>2022-03-25
+  </td>
+  <td>银行-1234
+  </td>
+  <td class='align-right'>248.00
+  </td>
+  <td>信用卡-6666
+  </td>
+  <td>还款
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>980986884
+  </td>
+  <td>Cleared, 房租
+  </td>
+  <td>2022-03-31
+  </td>
+  <td>银行-1234
+  </td>
+  <td class='align-right'>1,000.00
+  </td>
+  <td>支出
+  </td>
+  <td>房租
+  </td>
+  <td>
+  </td>
+</tr>
+  </tbody>
+</table>
+<table class='Accounts'>
+  <caption>Account
+  </caption>
+  <thead class='Accounts-Title'>
+    <tr>
+      <th>ID
+      </th>
+      <th>LABEL
+      </th>
+      <th>NAME
+      </th>
+      <th class='align-right'>BALANCE
+      </th>
+      <th>DES
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+  <td>1487598512
+  </td>
+  <td>
+  </td>
+  <td>收入
+  </td>
+  <td class='align-right'>-9,000.00
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>3700023247
+  </td>
+  <td>
+  </td>
+  <td>支出
+  </td>
+  <td class='align-right'>4,545.00
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>2066346468
+  </td>
+  <td>
+  </td>
+  <td>损益
+  </td>
+  <td class='align-right'>0.00
+  </td>
+  <td>未知来源或莫名消失的钱
+  </td>
+</tr>
+<tr>
+  <td>3048906322
+  </td>
+  <td>资产, 钱包, 现金
+  </td>
+  <td>现金钱包
+  </td>
+  <td class='align-right'>500.00
+  </td>
+  <td>随身携带的现金 (小于100不计)
+  </td>
+</tr>
+<tr>
+  <td>3545030725
+  </td>
+  <td>资产, 现金
+  </td>
+  <td>储备金
+  </td>
+  <td class='align-right'>0.00
+  </td>
+  <td>放在家里的现金 (小于100不计)
+  </td>
+</tr>
+<tr>
+  <td>1699189770
+  </td>
+  <td>资产, A, 银行, 存款
+  </td>
+  <td>银行-1234
+  </td>
+  <td class='align-right'>-661.00
+  </td>
+  <td>银行存款账户
+  </td>
+</tr>
+<tr>
+  <td>3356184867
+  </td>
+  <td>资产, B, 银行, 存款
+  </td>
+  <td>银行-7890
+  </td>
+  <td class='align-right'>5,000.00
+  </td>
+  <td>银行存款账户
+  </td>
+</tr>
+<tr>
+  <td>799409569
+  </td>
+  <td>负债, 银行, 信用
+  </td>
+  <td>信用卡-6666
+  </td>
+  <td class='align-right'>-445.00
+  </td>
+  <td>信用卡 (额度:5000)
+  </td>
+</tr>
+<tr>
+  <td>2587222139
+  </td>
+  <td>负债, 某金融机构, 信用
+  </td>
+  <td>信用账户-555
+  </td>
+  <td class='align-right'>0.00
+  </td>
+  <td>信用服务 (额度:3000)
+  </td>
+</tr>
+<tr>
+  <td>3730407238
+  </td>
+  <td>资产, 电子钱包, 某某金融机构, 现金
+  </td>
+  <td>电子账户-X
+  </td>
+  <td class='align-right'>61.00
+  </td>
+  <td>电子钱包 (充值,提现)
+  </td>
+</tr>
+<tr>
+  <td>36479809
+  </td>
+  <td>
+  </td>
+  <td>应收
+  </td>
+  <td class='align-right'>0.00
+  </td>
+  <td>
+  </td>
+</tr>
+<tr>
+  <td>1217159695
+  </td>
+  <td>负债
+  </td>
+  <td>应付
+  </td>
+  <td class='align-right'>0.00
+  </td>
+  <td>
+  </td>
+</tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+  </div>
+</div>
+</div>
+<div class='Lis-i'>
+<div class='KVs'>
+  <div class='KVs-k'>看过会计相关的书, 但对个人使用太复杂, 复式记账的表现形式太啰嗦, 直接使用流式要简单的多, 不用去记忆借了贷了的, 左右位置已经表示了.现在都计算机时代了, 除了手工输入核对每笔交易, 其他的完全用程序自动去处理就好, 只需要根据各自需要建立好规则.
+  </div>
+  <div class='KVs-v'>
+<div class='Lis'>
+</div>
+  </div>
+</div>
+</div>
+<div class='Lis-i'>
+<div class='KVs'>
+  <div class='KVs-k'>要是不嫌累的话, 可以手动分发交易到出入的账户.
+  </div>
+  <div class='KVs-v'>
+<div class='Lis'>
+<div class='Lis-i'>
+<div class='Link'>
+  <a href='Resource/记账示例-手动交易分发.numbers'>文件: 记账示例-手动交易分发.numbers
+  </a>
+</div>
+</div>
+<div class='Lis-i'>
+<div class='Link'>
+  <a href='Resource/记账示例-手动交易分发.xlsx'>文件(Excel版): 记账示例-手动交易分发.xlsx
+  </a>
+</div>
+</div>
+<div class='Lis-i'>
+<img class='Img' src='Resource/手动分发交易-支出.jpg' alt='手动分发交易-支出'>
+</div>
+<div class='Lis-i'>
+<img class='Img' src='Resource/手动分发交易-现金钱包.jpg' alt='手动分发交易-现金钱包'>
+</div>
+</div>
+  </div>
+</div>
+</div>
+</div></div>
+      </div>
+      <br>
+    </div>
   <footer class='site-footer'>Xt3 crackwallsports
   </footer>
-    </body>
-  </html>
+  </body>
+</html>
