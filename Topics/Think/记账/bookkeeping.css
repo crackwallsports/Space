@@ -9,28 +9,28 @@
 }
 table {
     font-size: .8em;
-    
-    
     border-collapse: collapse;
     text-align: left;
-    border-bottom: 1px solid;
+    
 }
 caption {
-    padding-bottom: .5em;
+    padding: .5em 0;
     font-size: 1.5em;
     text-align: center;
 
 }
 thead {}
-tbody {}
+tbody {
+    border-bottom: 1px solid;
+}
 tr {}
-th {
+thead th {
     font-weight: normal;
     
     border-bottom: 1px solid;
     padding-right: 2em;
 }
-td {
+tbody td {
     border-bottom: 1px dotted;
     padding: .5em 0;
     padding-right: 2em;
@@ -42,22 +42,41 @@ td {
 }
 .Code {
     border: 1px solid rgb(75, 54, 113);
-    padding: 1em;
+    padding: 0 1em 1em 0;
     border-radius: 6px;
+    display: inline-block;
+}
+.Code-lang {
+    padding: 0 .3em;
+    border-right: 1px solid rgb(75, 54, 113);
+     border-bottom: 1px solid rgb(75, 54, 113);
+}
+.Code pre {
+    padding: .5em;
 }
 
 .Bookkeeping {
     margin: 2em;
-    border: 1px solid rgb(75, 54, 113);
+   
+    display: flex;
+    justify-content: center;
+}
+.Bookkeeping > .Lis {
+     border: 1px solid rgb(75, 54, 113);
     border-radius: 6px;
 }
 .Bookkeeping > .Lis > .Lis-i {
     padding: .5em;
+    padding-bottom: 1em;
    border-bottom: 1px solid rgb(75, 54, 113);
     /*border-radius: 6px;*/
     background-color: rgba(11, 11, 11, 1);
     color: rgb(208, 208, 208);
 }
 .KVs {
-    padding: 1em 0;
+    padding: .5em 0 0 0;
+   
+}
+.KVs-k {
+    
 }
