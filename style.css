@@ -80,7 +80,10 @@ pre {
     font-size: .9em;
 }
 
-.Topic-title {
-    padding-bottom: .5em;
-    border-bottom: 2px solid rgb(75, 54, 113);
+.Topics-title {
+    padding-bottom: .1em;
+    border-bottom: 2px dotted rgb(75, 54, 113);
+}
+.Think-content > * + * {
+    margin-left: .5em;
 }

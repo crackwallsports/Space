@@ -1,0 +1,70 @@
+
+table {
+    font-size: .8em;
+    border-collapse: collapse;
+    text-align: left;
+    margin-bottom: 1em;
+    
+}
+caption {
+    padding: .5em 0;
+    font-size: 1.5em;
+    text-align: center;
+
+}
+thead {}
+tbody {
+    border-bottom: 1px solid;
+}
+tr {}
+thead th {
+    font-weight: normal;
+    
+    border-bottom: 1px solid;
+    padding-right: 2em;
+}
+tbody td {
+    border-bottom: 1px dotted;
+    padding: .5em 0;
+    padding-right: 2em;
+}
+.align-right {
+    text-align: right;
+    padding-right: .8em;
+}
+.Img {
+    max-height: 380px;
+    border-radius: 10px;
+}
+
+.AccFAP {
+    line-height: 1.5;
+    padding: 0 1em;
+    /*
+    max-width: 864px;
+    margin: auto;
+    */
+}
+.Lis + .Lis {
+    margin-top: .5em;
+}
+.AccFAP > .Lis {
+     /*border: 1px solid rgb(75, 54, 113);*/
+    border-radius: 6px;
+    margin-top: 1em;
+}
+.AccFAP > .Lis > .Lis-i {
+    padding: .5em;
+    padding-bottom: 1em;
+    border: 1px solid rgb(75, 54, 113);
+    border-radius: 6px;
+    background-color: rgba(11, 11, 11, 1);
+    color: rgb(208, 208, 208);
+}
+.O {
+    border: none;
+    border: 1px solid rgb(75, 54, 113);
+}
+.O-Type,.O-id {
+    display: none;
+}
